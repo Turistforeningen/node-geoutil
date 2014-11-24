@@ -1,0 +1,37 @@
+{
+  "name": "geoutil",
+  "version": "1.0.0",
+  "description": "Geographic formulas and geospatial transformations",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "coffee-script": "1.8.0"
+  },
+  "devDependencies": {
+    "mocha": "2.0.1"
+  },
+  "scripts": {
+    "build": "coffee --bare --compile --output lib/ src/*.litcoffee",
+    "prepublish": "coffee --bare --compile --output lib/ src/*.litcoffee",
+    "postpublish": "rm -rf lib/*",
+    "test": "mocha -w -b -c --check-leaks test/suite.litcoffee -R progress --compilers litcoffee:coffee-script/register",
+    "test-drone": "node_modules/.bin/mocha -b -c --check-leaks test/suite.coffee -R spec --compilers litcoffee:coffee-script/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Turistforeningen/node-geoutil"
+  },
+  "keywords": [
+    "Geo",
+    "Geography",
+    "Geospatial"
+  ],
+  "author": "Hans Kristian Flaatten <hans.kristian.flaatten@turistforeningen.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Turistforeningen/node-geoutil/issues"
+  },
+  "homepage": "https://github.com/Turistforeningen/node-geoutil"
+}
