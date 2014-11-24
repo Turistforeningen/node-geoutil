@@ -1,15 +1,15 @@
 Geoutil for Node.JS
 ===================
 
-# Install
+## Install
 
 ```
 npm install geoutil --save
 ```
 
-# Usage
+## Usage
 
-## pointDistance()
+### pointDistance()
 
 ```javascript
 var pointA = [ 60.39826, 5.32907 ];
@@ -19,7 +19,7 @@ geoutil.pointDistance(pointA, pointB);
 // 64781.55866944858
 ```
 
-## lineDistance()
+### lineDistance()
 
 ```javascript
 var line = [
@@ -34,5 +34,5 @@ geoutil.polygonArea(line);
 // 532.126784613296
 ```
 
-# [MIT License](https://raw.githubusercontent.com/Turistforeningen/node-geoutil/master/LICENSE)
+## [MIT License](https://raw.githubusercontent.com/Turistforeningen/node-geoutil/master/LICENSE)
 
