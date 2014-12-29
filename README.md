@@ -49,6 +49,7 @@ var polygon = [[
 ]];
 geoutil.polygonArea(poly);
 // 40.43198051882604
+```
 
 ## [MIT License](https://raw.githubusercontent.com/Turistforeningen/node-geoutil/master/LICENSE)
 
