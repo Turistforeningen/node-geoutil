@@ -1,4 +1,4 @@
-Geoutil for Node.JS
+Geoutil for Node.JS [![Build Status](https://drone.io/github.com/Turistforeningen/node-geoutil/status.png)](https://drone.io/github.com/Turistforeningen/node-geoutil/latest)
 ===================
 
 ## Install
