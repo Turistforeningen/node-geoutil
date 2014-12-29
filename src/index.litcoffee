@@ -64,3 +64,29 @@ Return the total distance for `line` in `meters`.
 
       dist
 
+## polygonArea()
+
+**Time Complexity:** O(N) where N is the number of points in the polygon.
+
+Compute the area of a polygon on a sphere.
+
+## Params
+
+* `Array` poly - the polygon
+
+## Return
+
+Return the total area for `poly` in `meters^2`.
+
+    exports.polygonArea = (poly) ->
+      area = 0
+
+      for _, i in poly[0] when i > 0
+        p1 = poly[0][i-1]
+        p2 = poly[0][i]
+
+        area += p1[1] * p2[0]
+        area -= p1[0] * p2[1]
+
+      exports.constants.R * area / 2
+

@@ -34,5 +34,19 @@ geoutil.lineDistance(line);
 // 532.126784613296
 ```
 
+### polygonArea()
+
+```javascript
+var polygon = [[
+  [ 61.498792, 8.636448 ]
+  [ 61.500270, 8.652638 ]
+  [ 61.499957, 8.660266 ]
+  [ 61.501822, 8.672846 ]
+  [ 61.503748, 8.696228 ]
+  [ 61.498792, 8.636448 ]
+]];
+geoutil.polygonArea(poly);
+// 40.43198051882604
+
 ## [MIT License](https://raw.githubusercontent.com/Turistforeningen/node-geoutil/master/LICENSE)
 

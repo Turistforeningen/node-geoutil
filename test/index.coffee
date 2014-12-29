@@ -18,8 +18,8 @@ describe 'lineDistance()', ->
     assert.equal dist, 3242.1939683950695
 
 describe 'polygonArea()', ->
-   it 'should return are in meters for polygon without rings', ->
-     console.log geoutil.polygonArea [[
+  it 'should return area in square meters for polygon without rings', ->
+    dist = geoutil.polygonArea [[
       [ 61.498792, 8.636448 ]
       [ 61.500270, 8.652638 ]
       [ 61.499957, 8.660266 ]
@@ -27,4 +27,5 @@ describe 'polygonArea()', ->
       [ 61.503748, 8.696228 ]
       [ 61.498792, 8.636448 ]
     ]]
+    assert.equal dist, 40.43198051882604
 
