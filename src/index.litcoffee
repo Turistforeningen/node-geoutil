@@ -49,11 +49,11 @@ Returns the distance from `p1` to `p2` in `meters`.
 
 Compute the distance for a line on a sphere using the haversine formula.
 
-## Params
+### Params
 
 * `Array` line - the line
 
-## Return
+### Return
 
 Return the total distance for `line` in `meters`.
 
@@ -71,11 +71,11 @@ Return the total distance for `line` in `meters`.
 
 Compute the area of a polygon on a sphere.
 
-## Params
+### Params
 
 * `Array` poly - the polygon
 
-## Return
+### Return
 
 Return the total area for `poly` in `meters^2`.
 
