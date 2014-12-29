@@ -1,3 +1,7 @@
+## Constants
+
+`R` is a fairly accurate radius of the earth in `meters`.
+
     exports.constants =
       R: 6378137
 
