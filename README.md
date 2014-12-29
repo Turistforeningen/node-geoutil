@@ -1,6 +1,8 @@
 Geoutil for Node.JS [![Build Status](https://drone.io/github.com/Turistforeningen/node-geoutil/status.png)](https://drone.io/github.com/Turistforeningen/node-geoutil/latest)
 ===================
 
+[![NPM](https://nodei.co/npm/geoutil.png?downloads=true)](https://www.npmjs.com/package/geoutil)
+
 ## Install
 
 ```
