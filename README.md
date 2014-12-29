@@ -13,7 +13,7 @@ npm install geoutil --save
 
 ### pointDistance()
 
-Get the distance in `meters` between two points.
+Get the distance in `meters` between two points. [Technical details](https://github.com/Turistforeningen/node-geoutil/blob/master/src/index.litcoffee#pointdistance)
 
 ```javascript
 var pointA = [ 60.39826, 5.32907 ];
@@ -25,7 +25,7 @@ geoutil.pointDistance(pointA, pointB);
 
 ### lineDistance()
 
-Get total distance in `meters` for polyline.
+Get total distance in `meters` for polyline. [Technical details](https://github.com/Turistforeningen/node-geoutil/blob/master/src/index.litcoffee#linedistance)
 
 ```javascript
 var line = [
@@ -42,7 +42,7 @@ geoutil.lineDistance(line);
 
 ### polygonArea()
 
-Get total area in `meters`^2 for polygon.
+Get total area in `meters`^2 for polygon. [Technical details](https://github.com/Turistforeningen/node-geoutil/blob/master/src/index.litcoffee#polygonarea)
 
 ```javascript
 var polygon = [[
