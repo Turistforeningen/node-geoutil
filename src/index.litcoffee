@@ -50,17 +50,17 @@ Compute the distance for a line on a sphere using the haversine formula.
 
 ## Params
 
-* `Array` l - the line
+* `Array` line - the line
 
 ## Return
 
-Return the total distance for `l` in `meters`.
+Return the total distance for `line` in `meters`.
 
-    exports.lineDistance = (l) ->
+    exports.lineDistance = (line) ->
       dist = 0
 
-      for _, i in l when i > 0
-        dist += exports.pointDistance l[i-1], l[i]
+      for _, i in line when i > 0
+        dist += exports.pointDistance line[i-1], line[i]
 
       dist
 
