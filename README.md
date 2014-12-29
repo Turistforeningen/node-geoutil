@@ -30,7 +30,7 @@ var line = [
   [ 61.503748, 8.696228 ]
 ];
 
-geoutil.polygonArea(line);
+geoutil.lineDistance(line);
 // 532.126784613296
 ```
 
