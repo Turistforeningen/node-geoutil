@@ -13,6 +13,8 @@ npm install geoutil --save
 
 ### pointDistance()
 
+Get the distance in `meters` between two points.
+
 ```javascript
 var pointA = [ 60.39826, 5.32907 ];
 var pointB = [ 60.62869, 6.41474 ];
@@ -22,6 +24,8 @@ geoutil.pointDistance(pointA, pointB);
 ```
 
 ### lineDistance()
+
+Get total distance in `meters` for polyline.
 
 ```javascript
 var line = [
@@ -37,6 +41,8 @@ geoutil.lineDistance(line);
 ```
 
 ### polygonArea()
+
+Get total area in `meters`^2 for polygon.
 
 ```javascript
 var polygon = [[
