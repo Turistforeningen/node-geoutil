@@ -5,9 +5,6 @@
     exports.constants =
       R: 6378137
 
-    exports.rad = Math.PI / 180
-    exports.deg = 180 / Math.PI
-
 ## pointDistance()
 
 **Time Complexity:** O(1)
@@ -93,4 +90,9 @@ Return the total area for `poly` in `meters^2`.
         area -= p1[0] * p2[1]
 
       exports.constants.R * area / 2
+
+## Helpers
+
+    exports.rad = Math.PI / 180
+    exports.deg = 180 / Math.PI
 
