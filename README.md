@@ -61,5 +61,10 @@ geoutil.polygonArea(poly);
 // 40.43198051882604
 ```
 
+### How about GeoJSON?
+
+If you are computing distances on GeoJSON data be sure to set the `inverse`
+option (last parameter on `lineDistance()` and `pointDistance()`) to `true`.
+
 ## [MIT Licensed](https://raw.githubusercontent.com/Turistforeningen/node-geoutil/master/LICENSE)
 

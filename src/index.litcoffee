@@ -21,19 +21,20 @@ and [Movable Type Scripts](http://www.movable-type.co.uk/scripts/latlong.html).
 
 * `Array` p1 - first point
 * `Array` p2 - second point
+* `boolean` inverse - `true` if coordinates are inversed
 
 ### Return
 
 Returns the distance from `p1` to `p2` in `meters`.
 
-    exports.pointDistance = (p1, p2) ->
-      #p1 = p1.coordinates.reverse() if p1.coordinates
-      #p2 = p2.coordinates.reverse() if p2.coordinates
+    exports.pointDistance = (p1, p2, inverse) ->
+      lat = if inverse then 1 else 0
+      lng = if inverse then 0 else 1
 
-      φ1 = p1[0] * exports.rad
-      φ2 = p2[0] * exports.rad
-      Δφ = (p2[0] - p1[0]) * exports.rad
-      Δλ = (p2[1] - p1[1]) * exports.rad
+      φ1 = p1[lat] * exports.rad
+      φ2 = p2[lat] * exports.rad
+      Δφ = (p2[lat] - p1[lat]) * exports.rad
+      Δλ = (p2[lng] - p1[lng]) * exports.rad
 
       a = Math.sin(Δφ/2) * Math.sin(Δφ/2) + \
           Math.cos(φ1)   * Math.cos(φ2)   * \
@@ -52,16 +53,17 @@ Compute the distance for a line on a sphere using the haversine formula.
 ### Params
 
 * `Array` line - the line
+* `boolean` inverse - `true` if coordinates are inversed
 
 ### Return
 
 Return the total distance for `line` in `meters`.
 
-    exports.lineDistance = (line) ->
+    exports.lineDistance = (line, inverse) ->
       dist = 0
 
       for _, i in line when i > 0
-        dist += exports.pointDistance line[i-1], line[i]
+        dist += exports.pointDistance line[i-1], line[i], inverse
 
       dist
 
